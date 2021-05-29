@@ -1,0 +1,12 @@
+body {
+    background: rgb(62, 138, 62);
+}
+
+.nav-bar {
+    background: rgb(70, 70, 207);
+    width: 80px;
+}
+
+.nav-items {
+    color: white;
+}
