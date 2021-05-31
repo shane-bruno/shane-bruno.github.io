@@ -1,3 +1,3 @@
 Web Development Portfolio website 
 
-[My Portfio](https://shane-bruno.github.io)
+[My Portfolio](https://shane-bruno.github.io)
