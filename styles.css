@@ -45,20 +45,19 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
-
+    padding: 20px;
+    margin: 10px; 
 }
 
 .projects-section {
     width: 75%;
-    height: 80vh;
+    height: auto;
     background: var(--brunswick-green);
     color: var(--beige);
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-rows: .2fr 3fr 2fr;
     gap: 1rem;
     grid-template-areas: 
     "project-section-header project-section-header"
@@ -66,21 +65,22 @@ h1 {
     "project-2 project-3";
     justify-items: center;
     align-items: start;
+    padding-bottom: 20px;
 }
 
 .project-section-header {
     grid-area: project-section-header;
+    height: 30px;
     align-self: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .project-1 {
     grid-area: project-1;
     max-width: 600px;
     width: 80%;
-    align-self: start;
+    align-self: center;
 }
 
 .project-2 {
@@ -88,6 +88,7 @@ h1 {
     width: 80%;
     max-width: 300px;
     justify-self: end;
+    align-self: center;
 }
 
 .project-3 {
@@ -95,6 +96,7 @@ h1 {
     width: 80%;
     max-width: 300px;
     justify-self: start;
+    align-self: center;
 }
 
 .projects {
@@ -123,6 +125,10 @@ h1 {
     background: black;
     width: 70%;
     justify-self: center;
+}
+
+.screenshot {
+    width: 100%;
 }
 
 .project-links {
@@ -164,4 +170,15 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-section-header {
+        margin-bottom: 20px;
+    }
 }
