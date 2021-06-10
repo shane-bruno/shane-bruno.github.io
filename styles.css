@@ -181,4 +181,8 @@ h1 {
     .project-section-header {
         margin-bottom: 20px;
     }
+    
+    .projects {
+        margin: 5px;
+    }
 }
