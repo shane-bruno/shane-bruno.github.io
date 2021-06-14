@@ -17,11 +17,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     color: var(--beige);
     display: flex;
     justify-content: center;
 }
+
+a {
+    color: var(--beige);
+    text-decoration: none;
+}
+
 .nav-bar {
     background: var(--viridian);
     width: 50%;
@@ -36,7 +43,7 @@ h1 {
     color: var(--beige);
 }
 
-.about {
+#about {
     width: 60%;
     height: auto;
     background: var(--davys-grey);
@@ -49,7 +56,7 @@ h1 {
     margin: 10px; 
 }
 
-.projects-section {
+#projects-section {
     width: 75%;
     height: auto;
     background: var(--brunswick-green);
@@ -122,7 +129,7 @@ h1 {
 
 .project-images {
     grid-area: project-images;
-    background: black;
+    background: transparent;
     width: 70%;
     justify-self: center;
 }
@@ -149,7 +156,7 @@ h1 {
     align-self: start;
 }
 
-.resume {
+#skills {
     width: 75%;
     height: auto;
     background: var(--dark-slate-gray);
@@ -158,9 +165,20 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.contact {
+.resume-buttons {
+    height: 50px;
+    width: 150px;
+    background: var(--bittersweet);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
     width: 55%;
     height: auto;
     margin: 10px;
@@ -173,7 +191,7 @@ h1 {
 }
 
 @media (max-width: 700px) {
-    .projects-section {
+    #projects-section {
         display: flex;
         flex-direction: column;
     }
@@ -181,7 +199,7 @@ h1 {
     .project-section-header {
         margin-bottom: 20px;
     }
-    
+
     .projects {
         margin: 5px;
     }
