@@ -1,4 +1,6 @@
 :root {
+ --nav-width: 15vw; 
+ --body-width: ;  
     /* CSS HEX */
 --midnight-green-eagle-green: #19434dff;
 --dark-slate-gray: #31474bff;
@@ -11,14 +13,23 @@
 }
 
 body {
+    padding-left: var(--nav-width);
     background: var(--midnight-green-eagle-green);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
-h1 {
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 40px;
+    max-width: calc(100vw - var(--nav-width));
+    max-height: 100vh;
+    height: 100vh;
+}
+
+#landing-page {
     color: var(--beige);
     display: flex;
     justify-content: center;
@@ -29,93 +40,68 @@ a {
     text-decoration: none;
 }
 
-.nav-bar {
-    background: var(--viridian);
-    width: 50%;
-    height: 40px;
-    border: 2px solid var(--bittersweet);
+nav {
+    background:black;
+    position: fixed;
+    width: var(--nav-width);
+    height: 100vh;
+    left: 0;
+    top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .nav-items {
     color: var(--beige);
 }
 
+
 #about {
-    width: 60%;
-    height: auto;
     background: var(--davys-grey);
     color: var(--beige);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 10px; 
+    padding: 40px;
+    max-width: calc(100vw - var(--nav-width));
+    height: 100vh;
 }
 
 #projects-section {
-    width: 75%;
-    height: auto;
     background: var(--brunswick-green);
     color: var(--beige);
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .2fr 3fr 2fr;
-    gap: 1rem;
-    grid-template-areas: 
-    "project-section-header project-section-header"
-    "project-1 project-1"
-    "project-2 project-3";
-    justify-items: center;
-    align-items: start;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
 }
 
 .project-section-header {
     grid-area: project-section-header;
     height: 30px;
-    align-self: center;
     display: flex;
     justify-content: center;
 }
 
 .project-1 {
-    grid-area: project-1;
-    max-width: 600px;
+    height: 200px;
     width: 80%;
-    align-self: center;
 }
 
 .project-2 {
-    grid-area: project-2;
     width: 80%;
-    max-width: 300px;
-    justify-self: end;
-    align-self: center;
 }
 
 .project-3 {
-    grid-area: project-3;
     width: 80%;
-    max-width: 300px;
-    justify-self: start;
-    align-self: center;
 }
 
 .projects {
     background: var(--viridian);
-    display: grid;
-    grid-template-rows: .5fr 6fr 2fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    grid-template-areas: 
-    "project-title project-title"
-    "project-images project-images"
-    "project-links project-code";
+    display: flex;
 }
 
 .project-title {
@@ -135,7 +121,7 @@ a {
 }
 
 .screenshot {
-    width: 100%;
+    max-height: 150px;
 }
 
 .project-links {
@@ -157,10 +143,7 @@ a {
 }
 
 #skills {
-    width: 75%;
-    height: auto;
     background: var(--dark-slate-gray);
-    margin: 10px;
     color: var(--beige);
     display: flex;
     flex-direction: column;
@@ -179,9 +162,6 @@ a {
 }
 
 #contact {
-    width: 55%;
-    height: auto;
-    margin: 10px;
     background: var(--viridian);
     color: var(--beige);
     display: flex;
