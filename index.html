@@ -22,32 +22,65 @@
         <h2 class = "section-header project-section-header">Projects</h2>
         <div class = "projects project-1">
             <div class = "project-title">Project 1</div>
-            <div class = "project-images project-1-image">
-                <img class = "screenshot" src="Coding Project Screenshot's/Identifying-Polygons-Screenshot.png" alt="Identifying Polygons">
-            </div>
-            <div class = "project-links project-1-link">
-                <a href = "https://codepen.io/sbruno1519/full/GRjzwer">View Project</a>
-            </div>
-            <div class = "project-code project-1-code">
-                <a href = "https://github.com/shane-bruno/Identifying-Polygons#readme">View Code</a>
+            <div class = "project-flex-container">
+                <div class = "project-images project-1-image">
+                    <img class = "screenshot" src="Coding Project Screenshot's/Identifying-Polygons-Screenshot.png" alt="Identifying Polygons">
+                </div>
+                <div class = "project-button-flex-container">
+                    <div class = "universal-button-style project-links project-1-link">
+                        <a href = "https://codepen.io/sbruno1519/full/GRjzwer" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                    <div class = "universal-button-style project-code project-1-code">
+                        <a href = "https://github.com/shane-bruno/Identifying-Polygons#readme" target="_blank" rel="noopener noreferrer">View Code</a>
+                    </div>
+                </div>
+                <a class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <br> elit, sed do eiusmod tempor incididunt
+                    <br> ut labore et dolore magna
+                </a>
             </div>
         </div>
         <div class = "projects project-2">
             <div class = "project-title">Project 2</div>
-            <div class = "project-images project-2-image">
-                <img class = "screenshot" src="Coding Project Screenshot's/Seal-Screenshot.png" alt = "Seal Project">
+            <div class = "project-flex-container">
+                <div class = "project-images project-2-image">
+                    <img class = "screenshot" src="Coding Project Screenshot's/Seal-Screenshot.png" alt = "Seal Project">
+                </div>
+                <div class = "project-button-flex-container">
+                    <div class = "universal-button-style project-links project-2-link">
+                        <a href = "https://codepen.io/sbruno1519/full/rNyMWJK" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                    <div class = "universal-button-style project-code project-2-code">
+                        <a href = "https://github.com/shane-bruno/Custom-Seal" target="_blank" rel="noopener noreferrer">View Code</a>
+                    </div>
+                </div>
+                <a class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <br> elit, sed do eiusmod tempor incididunt
+                    <br> ut labore et dolore magna
+                </a>
             </div>
-            <div class = "project-links project-2-link"><a href = "https://codepen.io/sbruno1519/full/rNyMWJK">View Project</a></div>
-            <div class = "project-code project-2-code"><a href = "https://github.com/shane-bruno/Custom-Seal">View Code</a></div>
         </div>
         <div class = "projects project-3">
             <div class = "project-title">Project 3</div>
-            <div class = "project-images project-3-image">
-                <img class = "screenshot" src="Coding Project Screenshot's/NFL-Best-Franchise-Screenshot.png" alt = "Best NFL Franchises">
+            <div class = "project-flex-container">
+                <div class = "project-images project-3-image">
+                    <img class = "screenshot" src="Coding Project Screenshot's/NFL-Best-Franchise-Screenshot.png" alt = "Best NFL Franchises">
+                </div>
+                <div class = "project-button-flex-container">
+                    <div class = "universal-button-style project-links project-3-link">
+                        <a href = "https://codepen.io/sbruno1519/full/ZEOmKBb" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                    <div class = "universal-button-style project-code project-3-code">
+                        <a href = "https://github.com/shane-bruno/Best-NFL-Franchises#readme" target="_blank" rel="noopener noreferrer">View Code</a>
+                    </div>
+                </div>
+                <a class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <br> elit, sed do eiusmod tempor incididunt
+                    <br> ut labore et dolore magna
+                </a>
             </div>
-            <div class = "project-links project-3-link"><a href = "https://codepen.io/sbruno1519/full/ZEOmKBb">View Project</a></div>
-            <div class = "project-code project-3-code"><a href = "https://github.com/shane-bruno/Best-NFL-Franchises#readme">View Code</a></div>
         </div>
+        <div class = "projects"><a href = "https://github.com/shane-bruno/shane-bruno.github.io" target="_blank" rel="noopener noreferrer">View Code for this site</a></div>
     </section>
     <section id = "skills">
         <h2>Skills</h2>
@@ -59,9 +92,15 @@
              <li>Cum sociis natoque penatibus et magnis dis parturient. Aliquam nulla facilisi cras fermentum. </li>
              <li>Aliquet bibendum enim facilisis gravida neque convallis.
              </ul> 
-        <div class = "resume-buttons" id = "download-resume-btn"><a href = "Resume/Resume.pdf" download = "Shane Bruno Resume">Download Resume</a></div>
-        <div class = "resume-buttons" id = "view-resume-btn"><a href = "Resume/Resume.html">View Resume</a></div>
-        </div>
+            </div>
+        <div class = "resume-button-container">
+            <div class = "universal-button-style resume-buttons" id = "download-resume-btn">
+                <a href = "Resume/Resume.pdf" download = "Shane Bruno Resume">Download Resume</a>
+            </div>
+            <div class = "universal-button-style resume-buttons" id = "view-resume-btn">
+                <a href = "Resume/Resume.html" target="_blank" rel="noopener noreferrer">View Resume</a>
+            </div>
+        </div> 
     </section>
     <section id = "contact">
         <h2>Contact</h2>
@@ -78,7 +117,7 @@
             <label for = "message">Message</label>
             <textarea type = "text" class = "message" name = "message"></textarea>   
           </div>
-          <button type = "submit">Submit</button>
+          <button class = "universal-button-style" type = "submit">Submit</button>
         </form>
     </section>  
     </body>
