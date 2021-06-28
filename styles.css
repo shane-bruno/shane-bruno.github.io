@@ -111,7 +111,7 @@ a {
     align-items: center;
     position: fixed;
     right: 2vw;
-    top: 85vh;
+    bottom: 3vh;
     background: white;
     height: 80px;
     width: 30px;
