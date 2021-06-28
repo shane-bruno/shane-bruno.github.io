@@ -223,6 +223,7 @@ flex-direction: column;
  display: flex;
  flex-direction: row;
  justify-content: center;
+ margin-top: 50px;
 }
 
 .resume-buttons {
@@ -347,5 +348,9 @@ textarea {
         margin: 10px;
         justify-content: center;
         align-items: flex-start;
+        }
+ 
+  .resume-button-container {
+ flex-direction: column;
         }
 }
