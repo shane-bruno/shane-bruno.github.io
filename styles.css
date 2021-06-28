@@ -110,7 +110,7 @@ a {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    left: 92vw;
+    right: 2vw;
     top: 85vh;
     background: white;
     height: 80px;
