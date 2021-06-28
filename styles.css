@@ -48,6 +48,10 @@ a {
     text-decoration: none;
 }
 
+#about-paragraph {
+    max-width: 600px;
+}
+
 .universal-button-style {
     color: var(--beige);
     background: var(--button-color);
@@ -57,10 +61,27 @@ a {
     align-items: center;
     height: 50px;
     width: 150px;
+    opacity: 70%;
+    box-shadow:  darkslategrey inset 2px 2px;
 }
 
-nav {
-    background:black;
+.fab {
+    color: white;
+    background: blue;
+    height: 100px;
+    width: 50px;
+}
+
+.universal-button-style:hover {
+    opacity: 100%;
+}
+
+.universal-button-style:active {
+    box-shadow: unset;
+}
+
+.main-nav {
+    background: gray;
     position: fixed;
     width: var(--nav-width);
     height: 100vh;
@@ -77,6 +98,27 @@ nav {
 .nav-items {
     color: var(--beige);
     margin-top: 1em;
+}
+
+.nav-items:hover {
+    text-decoration-line: underline overline;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 92vw;
+    top: 85vh;
+    background: white;
+    height: 80px;
+    width: 30px;
+}
+
+.iconify-codepen {
+    color: black;
 }
 
 
@@ -96,6 +138,8 @@ nav {
     background: var(--brunswick-green);
     color: var(--beige);
     display: flex;
+    height: 120vh;
+    max-height: 120vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +148,7 @@ nav {
 .project-section-header {
     grid-area: project-section-header;
     display: flex;
-    margin: 10px;
+    margin: 5px;
     justify-content: center;
     align-items: flex-start;
 }
@@ -113,7 +157,8 @@ nav {
     background: var(--viridian);
     height: 180px;
     width: 90%;
-    min-width: 550px;
+    margin: 10px;
+    min-width: 590px;
     max-width: 800px;
 }
 
@@ -125,7 +170,7 @@ nav {
 
 .project-title {
     color: var(--beige);
-    background: black;
+    background: rgb(65, 58, 155);
     position: relative;
     top: 0;
     left: 0;
@@ -160,6 +205,11 @@ flex-direction: column;
     margin: 10px;
 }
 
+.portfolio-code {
+    display: flex;
+    justify-content: center;
+}
+
 #skills {
     background: var(--dark-slate-gray);
     color: var(--beige);
@@ -176,10 +226,8 @@ flex-direction: column;
 }
 
 .resume-buttons {
-    height: 50px;
-    width: 150px;
-    margin: 10px;
     display: flex;
+    margin: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -217,6 +265,21 @@ textarea {
     width: 100%;
 }
 
+@media (max-height: 680px) {
+
+    #projects-section {
+        min-height: 1500px;
+    }
+
+    #skills {
+        min-height: 600px;
+    }
+
+    #contact {
+        min-height: 600px;
+    }
+}
+
 @media (max-width: 700px) {
 
     .projects {
@@ -250,7 +313,7 @@ textarea {
         padding-top: 30px;
     }
 
-    nav {
+    .main-nav {
         position: sticky;
         width: 100vw;
         height: 12vh;
@@ -260,6 +323,7 @@ textarea {
         justify-content: space-around;
         align-items: center;
         }
+
 
     #landing-page {
         display: flex;
