@@ -305,7 +305,7 @@ textarea {
 @media (max-height: 680px) {
 
     #projects-section {
-        min-height: 1500px;
+        min-height: 1000px;
     }
 
     #skills {
@@ -314,6 +314,13 @@ textarea {
 
     #contact {
         min-height: 600px;
+    }
+}
+
+@media (max-height: 680px) and (max-width: 850px) {
+    
+    #projects-section {
+        min-height: 1500px;
     }
 }
 
