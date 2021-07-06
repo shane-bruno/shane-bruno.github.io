@@ -357,6 +357,7 @@ textarea {
         align-items: center;
         justify-content: space-between;
         padding-top: 100px;
+        min-height: 1200px;
         }
         
     .project-section-header {
