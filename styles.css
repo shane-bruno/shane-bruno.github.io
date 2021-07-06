@@ -350,7 +350,7 @@ textarea {
     }
 
     #projects-section {
-        background: var(--brunswick-green);
+        background: black;
         color: var(--beige);
         display: flex;
         flex-direction: column;
