@@ -350,14 +350,14 @@ textarea {
     }
 
     #projects-section {
-        background: black;
+        background: gray;
         color: var(--beige);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         padding-top: 100px;
-        min-height: 1200px;
+        min-height: 1600px;
         }
         
     .project-section-header {
