@@ -11,6 +11,17 @@
 --beige: #e2e8ceff;
 --bittersweet: #ff715bff;
 
+/*New Color Scheme*/
+--rich-black-fogra-39: #060906ff;
+--rich-black-fogra-39-2: #070a07ff;
+--rich-black-fogra-39-3: #06070fff;
+--rich-black-fogra-29: #050610ff;
+--eerie-black: #1d201eff;
+--cinnabar: #da4944ff;
+--xiketic: #040412ff;
+--dark-blue-gray: #666a86ff;
+--pale-cerulean: #95b8d1ff;
+--dutch-white: #e8ddb5ff;
 --button-color: rgba(64, 95, 95, 0.993);
 }
 
@@ -54,15 +65,15 @@ a {
 
 .universal-button-style {
     color: var(--beige);
-    background: var(--button-color);
-    border-radius: 10px/10px;
+    background: linear-gradient(var(--midnight-green-eagle-green), var(--dark-blue-gray));
+    border-radius: 30px/ 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 150px;
-    opacity: 70%;
-    box-shadow:  darkslategrey inset 2px 2px;
+    opacity: 80%;
+    box-shadow:  white inset 10px 10px 50%;
 }
 
 .fab {
@@ -110,8 +121,8 @@ a {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    right: 2vw;
-    bottom: 3vh;
+    right: 1.2vw;
+    bottom: 2vh;
     background: white;
     height: 80px;
     width: 30px;
@@ -175,6 +186,7 @@ a {
     top: 0;
     left: 0;
     height: 25px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,11 +215,6 @@ flex-direction: column;
 
 .project-description {
     margin: 10px;
-}
-
-.portfolio-code {
-    display: flex;
-    justify-content: center;
 }
 
 #skills {
@@ -266,20 +273,7 @@ textarea {
     width: 100%;
 }
 
-@media (max-height: 680px) {
 
-    #projects-section {
-        min-height: 1500px;
-    }
-
-    #skills {
-        min-height: 600px;
-    }
-
-    #contact {
-        min-height: 600px;
-    }
-}
 
 @media (max-width: 850px) {
 
@@ -303,7 +297,23 @@ textarea {
         align-items: center;
         justify-content: space-between;
         max-height: unset;
+        min-height: 1500px;
         height: 200vh;
+    }
+}
+
+@media (max-height: 680px) {
+
+    #projects-section {
+        min-height: 1500px;
+    }
+
+    #skills {
+        min-height: 600px;
+    }
+
+    #contact {
+        min-height: 600px;
     }
 }
 
@@ -349,8 +359,8 @@ textarea {
         justify-content: center;
         align-items: flex-start;
         }
- 
-  .resume-button-container {
- flex-direction: column;
-        }
+
+        .resume-button-container {
+            flex-direction: column;
+           }
 }
