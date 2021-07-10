@@ -5,15 +5,16 @@
         <meta name="viewport" content="width=device-width">
         <title>Shane's Portfolio</title>
         <link rel="stylesheet" href="styles.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
     <body>
         <nav class = "main-nav">
-            <div class = "nav-items about-nav"><a href = "#landing-page">Home</a></div>
-            <div class = "nav-items about-nav"><a href = "#about">About</a></div>
-            <div class = "nav-items projects-nav"><a href = "#projects-section">Projects</a></div>
-            <div class = "nav-items"><a href = "#skills">Skills</a></div>
-            <div class = "nav-items contact-nav"><a href = "#contact">Contact</a></div>
+            <div class = "nav-items about-nav"><a class = "nav-text" href = "#landing-page">Home</a></div>
+            <div class = "nav-items about-nav"><a class = "nav-text" href = "#about">About</a></div>
+            <div class = "nav-items projects-nav"><a class = "nav-text" href = "#projects-section">Projects</a></div>
+            <div class = "nav-items"><a class = "nav-text" href = "#skills">Skills</a></div>
+            <div class = "nav-items contact-nav"><a class = "nav-text" href = "#contact">Contact</a></div>
         </nav>
         <nav class = "links">
             <a class = "link-icons" id = "github-icon" href = "https://github.com/shane-bruno" target="_blank" rel="noopener noreferrer">
@@ -26,7 +27,15 @@
                 <span class="iconify-codepen iconify" data-icon="akar-icons:codepen-fill" data-inline="false"></span>
             </a>
         </nav>
-    <section id = "landing-page">Shane Bruno</section>
+    <section id = "landing-page">
+        <div class = "landing-page-text-container">
+            <h1>Shane Bruno</h1>
+            <h3>A Chicago based frontend developer</h3>
+            <h5>I build websites and fun interactive web apps</h5>
+            <h6>Come see more about me</h6>
+        </div>
+        <img class = "chicago-skyline" src = "SVG's/Chicago-skyline.svg" alt = "Chicago Skyline">
+    </section>
     <section id = "about">
         <h2>About</h2>
         <p id = "about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis posuere morbi leo. Lobortis feugiat vivamus at augue eget arcu dictum. Netus et malesuada fames ac turpis egestas integer. Feugiat in fermentum posuere urna. Cum sociis natoque penatibus et magnis dis parturient. Aliquam nulla facilisi cras fermentum. Aliquet bibendum enim facilisis gravida neque convallis. Elementum eu facilisis sed odio. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi.</p>
@@ -47,9 +56,12 @@
                         <a href = "https://github.com/shane-bruno/Identifying-Polygons#readme" target="_blank" rel="noopener noreferrer">View Code</a>
                     </div>
                 </div>
-                <a class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    <br> elit, sed do eiusmod tempor incididunt
-                    <br> ut labore et dolore magna
+                <a class = "project-description">
+                    <ul>
+                        <li>Helps identify different types of polygons</li>
+                        <li>Interactive design</li>
+                        <li>Javascript, HTML, CSS, GSAP, SVG</li>
+                    </ul>
                 </a>
             </div>
         </div>
@@ -67,9 +79,12 @@
                         <a href = "https://github.com/shane-bruno/Custom-Seal" target="_blank" rel="noopener noreferrer">View Code</a>
                     </div>
                 </div>
-                <a class = "project-description">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    <br> elit, sed do eiusmod tempor incididunt
-                    <br> ut labore et dolore magna
+                <a class = "project-description">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>elit, sed do eiusmod tempor incididunt</li>
+                        <li>ut labore et dolore magna</li>
+                    </ul>   
                 </a>
             </div>
         </div>
@@ -107,11 +122,10 @@
         <h2>Skills</h2>
         <div class = "skills-info">
             <ul>
-             <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
-             <li>Pharetra convallis posuere morbi leo. Lobortis feugiat vivamus at augue eget arcu dictum. </li>
-             <li>Netus et malesuada fames ac turpis egestas integer. Feugiat in fermentum posuere urna. </li>
-             <li>Cum sociis natoque penatibus et magnis dis parturient. Aliquam nulla facilisi cras fermentum. </li>
-             <li>Aliquet bibendum enim facilisis gravida neque convallis.
+             <li>HTML: Building a web page from scratch </li>
+             <li>CSS: Flexbox, Animations, Grid </li>
+             <li>Javascript: DOM methods, GSAP animation library </li>
+             <li>Inkscape</li>
              </ul> 
             </div>
         <div class = "resume-button-container">
