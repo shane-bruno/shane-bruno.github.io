@@ -23,7 +23,7 @@
    }
    
    #landing-page {
-    background: transparent;
+    background: black;
     display: flex;
     padding: 0;
     flex-direction: column;
@@ -32,51 +32,55 @@
    }
 
    .landing-page-text-container {
+        align-self: flex-start;
+        margin-left: 4vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         background: transparent;
    }
 
    .chicago-skyline {
        align-self: stretch;
-       background: transparent;
+       background:transparent;
        height: 45vh;
        width: auto;
-   }
-
-   #base {
-       background: blue;
    }
 
    h1 {
     font-size: 4rem;
     color:rgba(107,52,255,1);
+    background: transparent;
     font-family: var(--font-1);
+    width: auto;
    }
    
    h2 {
        color: white;
        font-size: 45px;
+       font-family: var(--font-1);
    }
 
    h3 {
     color: rgba(51,159,247,1);
+    font-size: large;
+    font-family: var(--font-1);
    }
    h5 {
        color: hsla(29, 93%, 66%, 1);
+       font-size: large;
+       font-family: var(--font-1);
+
    }
    h6 {
        color: hsla(0, 89%, 71%, 1);
+       font-size: large;
+       font-family: var(--font-1);
    }
    a {
        color: white;
        text-decoration: none;
-   }
-   
-   #about-paragraph {
-       max-width: 600px;
    }
    
    .universal-button-style {
@@ -164,10 +168,16 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       padding: 50px;
+       padding: 20vw;
        max-width: calc(100vw - var(--nav-width));
-       height: 100vh;
+       height: auto;
    }
+
+   #about-paragraph {
+    font-family: var(--font-1);
+    font-size: larger;
+    max-width: 500px;
+}
    
    #projects-section {
        background: black;
