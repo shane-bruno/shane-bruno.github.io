@@ -19,7 +19,6 @@
    section {
        padding: 40px;
        max-width: var(--body-width);
-       max-height: 100vh;
        height: 100vh;
    }
    
@@ -43,7 +42,7 @@
    .chicago-skyline {
        align-self: stretch;
        background: transparent;
-       height: 40vh;
+       height: 45vh;
        width: auto;
    }
 
@@ -118,12 +117,25 @@
    }
    
    .nav-items {
-       color: var(--beige);
        margin-top: 1em;
    }
    
-   .nav-items:hover {
-       text-decoration-line: underline overline;
+   .nav-text:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   .nav-text:hover:after,
+   .nav-items:focus:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
    }
    
    .links {
@@ -135,15 +147,15 @@
        right: 1.2vw;
        bottom: 2vh;
        background: white;
-       height: 80px;
-       width: 30px;
+       height: 100px;
+       width: 40px;
        z-index: 4;
+       border-radius: 20px;
    }
    
    .iconify-codepen {
        color: black;
    }
-   
    
    #about {
        background-image: linear-gradient( 109.2deg,  rgba(107,52,255,1) 16.5%, rgba(51,159,247,1) 81% );
@@ -152,7 +164,7 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       padding: 40px;
+       padding: 50px;
        max-width: calc(100vw - var(--nav-width));
        height: 100vh;
    }
@@ -166,14 +178,6 @@
        flex-direction: column;
        align-items: center;
        justify-content: space-between;
-   }
-   
-   .project-section-header {
-       grid-area: project-section-header;
-       display: flex;
-       margin: 5px;
-       justify-content: center;
-       align-items: flex-start;
    }
    
    .projects {
@@ -203,7 +207,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       border-radius: 20px;
+       border-radius: 20px 20px 0 0;
    }
    
    .project-images {
@@ -229,6 +233,7 @@
    
    .project-description {
        margin: 10px;
+       color: white;
    }
    
    #skills {
@@ -288,6 +293,10 @@
    }
    
    @media (max-width: 850px) {
+
+        #landing-page {
+            height: auto;
+        }
    
        .projects {
            height: auto;
@@ -309,7 +318,7 @@
            justify-content: space-between;
            max-height: unset;
            min-height: 1500px;
-           height: 200vh;
+           height: auto;
        }
    }
    
@@ -371,8 +380,7 @@
            }
 
         .chicago-skyline {
-            width: 100vw;
-            height: 200px;
+            display: none;
         }
         
         .landing-page-text-container {
