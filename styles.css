@@ -313,10 +313,6 @@
    
    @media (max-width: 850px) {
 
-        #landing-page {
-            height: auto;
-        }
-   
        .projects {
            height: auto;
            width: 90%;
@@ -338,6 +334,10 @@
            max-height: unset;
            min-height: 1500px;
            height: auto;
+       }
+
+       .chicago-skyline {
+           width: 100%;
        }
    }
    
@@ -404,5 +404,9 @@
         
         .landing-page-text-container {
             width: 100vw;
+        }
+
+        .project-title {
+            font-size: small;
         }
    }
