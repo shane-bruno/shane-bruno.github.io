@@ -42,11 +42,22 @@
         background: transparent;
    }
 
+   .svg-container {
+    align-self: stretch;
+    display: inline-block;
+    background: transparent;
+	position: relative;
+	width: 100vw;
+	padding-top: 30%; 
+	vertical-align: middle; 
+	overflow: hidden;
+   }
+
    .chicago-skyline {
-       align-self: stretch;
-       background:transparent;
-       height: 45vh;
-       width: auto;
+    display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
    }
 
    h1 {
@@ -61,12 +72,13 @@
        color: white;
        font-size: 45px;
        text-emphasis: bold;
+       font-size: xx-large;
        font-family: var(--font-1);
    }
 
    h3 {
     color: rgba(51,159,247,1);
-    font-size: large;
+    font-size: xx-large;
     font-family: var(--font-1);
    }
    h5 {
@@ -199,7 +211,7 @@
    
    .projects {
        background: #131313;
-       height: 180px;
+       height: auto;
        width: 90%;
        margin: 10px;
        min-width: 590px;
@@ -251,6 +263,10 @@
    .project-description {
        margin: 10px;
        color: white;
+   }
+
+   .portfolio-code-button {
+       margin: 10px;
    }
    
    #skills {
@@ -381,6 +397,10 @@
            justify-content: space-around;
            align-items: center;
            }
+
+        .chicago-skyline {
+            width: 100vw
+        }
    
        #projects-section {
            display: flex;
@@ -397,10 +417,6 @@
            justify-content: center;
            align-items: flex-start;
            }
-
-        .chicago-skyline {
-            display: none;
-        }
         
         .landing-page-text-container {
             width: 100vw;
